@@ -1,0 +1,51 @@
+
+/*-------Cards----------*/
+@media (max-width: 700px) {
+  .card {
+    width: 100%;
+  }
+}
+@media (min-width: 700px) {
+  .card {
+    max-width: 320px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .card:nth-child(even) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 980px) {
+  .card:nth-child(even) {
+    margin-right: 20px;
+  }
+  .card:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+
+@media (max-width: 800px) {
+.section1, .section2 {
+flex-direction: column;
+margin-top: 60px;
+}
+
+.gallery-cell {
+  height: 400px;
+}
+
+.gallery-cell:before{
+  line-height: 400px;
+}
+.flickity-page-dots {
+  bottom: 20px;
+}
+.flickity-prev-next-button .arrow {
+  fill: white;
+  top: 20%;
+}
+.carousel-cell {
+  width: 68%;
+}
+}

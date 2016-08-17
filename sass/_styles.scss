@@ -1,0 +1,290 @@
+.navbar {
+   border-radius: 0;
+   border: 0;
+   background: skyblue;
+   }
+
+header .navbar-collapse .navbar-right a:hover {
+         color: #fff;
+         background: #515151;
+      }
+
+.section1 {
+   margin-top: 100px;
+   max-width: 1280px;
+   @include center-block;
+   @include center-flex;
+   }
+
+.sec1a {
+   text-align: center;
+   font-size: 1.6em;    
+   color: #fff;
+   background: url('http://www.gratisography.com/pictures/307_1.jpg') no-repeat center center;
+   width: 480px;
+   height: 380px;
+   @include border-radius(10px);
+}
+
+.sec1b {
+   text-align: center;
+   font-size: 1.6em;
+}
+
+.section2 {
+   margin-top: 120px;
+   max-width: 1280px;
+   @include center-block;
+   @include center-flex;
+}
+
+
+.sec2b {
+   text-align: center;
+   font-size: 1.6em;   
+   color: #fff;
+   background: url('http://www.gratisography.com/pictures/313_1.jpg') no-repeat center center;
+   width: 480px;
+   height: 380px;
+   @include border-radius(10px);
+}
+
+.sec2a {
+   text-align: center;
+   font-size: 1.6em;
+}
+
+/* -------Flickity 1-------*/
+
+.gallery {
+  background: #EEE;
+  margin-top: 120px;
+}
+
+.gallery-cell {
+  width: 100%;
+  height: 600px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 600px;
+  font-size: 80px;
+  color: white;
+}
+
+
+/* big buttons, no circle */
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+/* position dots in gallery */
+.flickity-page-dots {
+  bottom: 15px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+/*--------Card Section-------*/
+
+.cards-section {
+  margin-top: 120px;
+  max-width: 1280px;
+  @include center-block;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  padding: 1.5%;
+  box-sizing: border-box;
+}
+
+.card {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  background: #fefff9;
+  color: #363636;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+  border-radius: 4px;
+}
+
+.card span {
+  display: block;
+}
+.card .card-summary {
+  padding: 5% 5% 3% 5%;
+}
+.card .card-header {
+  position: relative;
+  height: 175px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  background-blend-mode: overlay;
+  border-radius: 4px 4px 0 0;
+}
+.card .card-header:hover, .card .card-header:focus {
+  background-color: rgba(255, 255, 255, 0);
+}
+.card .card-title {
+  background: rgba(157, 187, 63, 0.85);
+  padding: 3.5% 0 2.5% 0;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.card .card-title h3 {
+  font-size: 1.2em;
+  line-height: 1.2;
+  padding: 0 3.5%;
+  margin: 0;
+}
+.card .card-meta {
+  max-height: 0;
+  overflow: hidden;
+  color: #666;
+  font-size: .78em;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 5%;
+  padding: 0 5%;
+  transition-property: max-height;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+.card:hover, .card:focus {
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+}
+.card:hover .card-title, .card:focus .card-title {
+  background: rgba(157, 187, 63, 0.95);
+}
+.card:hover .card-meta, .card:focus .card-meta {
+  max-height: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  
+  transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, transform;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+/*-------Flickity Slider 2-------*/
+.slider2 {
+   margin-top: 100px;
+}
+
+.carousel-cell {
+  width: 28%;
+  height: 300px;
+  margin-right: 10px;
+  background: skyblue;
+  border-radius: 5px;
+  padding: 40px 15px 0px 15px;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  color: white;
+}
+
+.carousel-cell.is-clicked {
+  background: #ED2;
+}
+
+/*--------Contact---------*/
+
+.form-section {
+   margin-top: 120px;
+   background: #515151;
+   color: #fff;
+
+    h1 {
+      padding: 60px 0;
+    }
+}
+
+.form-section .contact .btn {
+  margin-bottom: 80px;
+}
+
+
+/*---------Footer---------*/
+
+footer {
+   margin-top: 0px;
+   background: skyblue;
+   min-height: 100px;
+
+    section {
+      padding-top: 40px;
+    }
+
+      li {
+        display: inline-block;
+        font-size: 1.6em;
+      }
+
+      li:first-child {
+        margin-right: 12px;
+      }
+}
+
+
+
+
+
+
+
+
+
